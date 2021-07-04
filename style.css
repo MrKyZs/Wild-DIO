@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+.wild-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.imagensjogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.imagensjogo img{
+    height: 43rem;
+    border:	#FFD700 solid;
+    border-width: thin;
+    border-radius: 25px;
+    width: 150%;
+    margin-right: 250px;
+}
+.wild-continue{
+    display:flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.group{
+    display: flex;
+    justify-content: space-between; /* vertical*/
+    align-items: center; /*horizontal*/
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 5% 0;
+    border: 1px solid#FFD700;
+}
+.group:nth-child(1){
+    min-height: 19rem;
+    margin-bottom: 15px;
+}
+.player-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.player-icon img{
+    height:10rem;
+}
+.wild-logo{
+    height: 8rem;
+}
+.continue-login{
+    background-color: #0096f6;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+.deslogar{
+    color:#0096f6;
+}
+.semconta{
+    color:rgb(160 160 160);
+}
+.trocadeconta{
+    color: #0096f6;
+}
+.gettheapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.6rem 0;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.app-down{
+    height: 3rem;
+    width: 10.5rem;
+    background-size: cover;
+}
+.app-down:nth-child(1){
+    background-image: url(./img/appledown.png);
+}
+.app-down:nth-child(2){
+    background-image: url(./img/googledown.png);
+}
+@media(max-width:1047px){
+    .wild-wrapper{
+        width: 90%;
+    }
+}
+@media(max-width:880px){
+    .body{
+        color:white;
+    }
+    .wild-wrapper{
+        width: 90%;
+    }
+    .player-icon{
+        display: none;
+    }
+    .wild-continue{
+        width: 100%;
+    }
+}
